@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LayoutService } from './services/layout.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'calendar-app';
+
+  constructor(public layoutService: LayoutService) {
+
+  }
 }

@@ -1,0 +1,5 @@
+<app-agenda-item
+  *ngFor="let item of agendaItems; let i = index"
+  [style.--list-position]="i"
+  [agenda]="item"
+></app-agenda-item>

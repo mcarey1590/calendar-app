@@ -1,0 +1,5 @@
+<header>
+  <span>{{currentMonth}}</span>
+  <div id="search-icon"><img src="assets/search-icon.png"/></div>
+</header>
+<app-calendar-matrix [ngClass]="{grow: layoutService.aboveMaxHeight | async}" [style.--week]="calendarState.selectedWeek"></app-calendar-matrix>

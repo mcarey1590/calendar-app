@@ -1,0 +1,46 @@
+:host {
+  display: grid;
+  grid-template-rows: minmax(9px, max-content) 1fr;
+  background: var(--primary-dark-color);
+  max-height: calc(50vh + 24px);
+  will-change: height;
+  overflow: hidden;
+
+  &.open {
+    header {
+      padding: 0.4rem;
+      visibility: visible;
+      height: 24px;
+      opacity: 1;
+    }
+    app-calendar-matrix {
+      transform: unset;
+    }
+  }
+  header {
+    display: flex;
+    transition: visibility 0s, opacity 0.5s linear, height 0.5s linear;
+    padding: 4px;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+
+    > span {
+      flex: 1;
+    }
+
+    #search-icon {
+      right: 5px;
+      height: 24px;
+      img {
+        object-position: center;
+        object-fit: fill;
+        height: 100%;
+      }
+    }
+  }
+
+  app-calendar-matrix {
+    transform: translateY(calc(var(--week, 0) * -58px));
+  }
+}

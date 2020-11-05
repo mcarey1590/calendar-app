@@ -1,0 +1,13 @@
+:host {
+  background: var(--secondary-light-color);
+  margin: 8px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.current {
+    background: var(--secondary-color);
+  }
+}

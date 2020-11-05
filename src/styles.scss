@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #3f51b5;
+  --primary-light-color: #757de8;
+  --primary-dark-color: #002984;
+  --primary-color-contrast: #ffffff;
+  --secondary-color: #ff4081;
+  --secondary-light-color: #ff79b0;
+  --secondary-dark-color: #c60055;
+  --secondary-color-contrast: #ffffff;
+  --accent-color: #ffeb3b;
+  --accent-color-contrast: #263238;
+  --heading-color: #292922;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  color: var(--primary-color-contrast);
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}

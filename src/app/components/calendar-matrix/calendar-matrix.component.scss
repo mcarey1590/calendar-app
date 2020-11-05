@@ -1,0 +1,25 @@
+:host {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, minmax(56px, 1fr));
+  justify-items: center;
+  height: 100%;
+
+  &.grow {
+    transform: scale(1.2);
+    app-calendar-day {
+      transform: scale(1.2);
+    }
+  }
+
+  app-calendar-day {
+    height: 40px;
+    width: 40px;
+    transition: all .5s;
+
+    &[selected='true'] {
+      background: var(--accent-color);
+      color: var(--accent-color-contrast);
+    }
+  }
+}
