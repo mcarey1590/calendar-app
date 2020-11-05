@@ -38,6 +38,10 @@ export class CalendarStateService {
     this.selectedDaySubject.next(currentDay);
   }
 
+  selectDay(day: Day) {
+    this.selectedDaySubject.next(day);
+  }
+
   previousDay() {
     let nextIndex = this.selectedDay.index - 1;
     if (nextIndex < 0) {

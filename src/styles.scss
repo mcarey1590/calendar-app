@@ -21,4 +21,10 @@ body {
   background-color: var(--primary-color);
   color: var(--primary-color-contrast);
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+
+  app-root {
+    max-width: 420px;
+    max-height: 720px;
+    margin: 0 auto;
+  }
 }

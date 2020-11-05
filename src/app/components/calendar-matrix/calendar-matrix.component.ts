@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Day } from 'src/app/models/Day';
 import { CalendarStateService } from 'src/app/services/calendar-state.service';
 
 @Component({
@@ -10,6 +11,10 @@ export class CalendarMatrixComponent implements OnInit {
   constructor(public calendarState: CalendarStateService) { }
 
   ngOnInit(): void {
+  }
+
+  changeDay(day: Day) {
+    this.calendarState.selectDay(day);
   }
 
 }

@@ -2,4 +2,5 @@
   *ngFor="let day of calendarState.calendarDays"
   [day]="day"
   [attr.selected]="calendarState.selectedDay == day"
+  (click)="changeDay(day)"
 ></app-calendar-day>
