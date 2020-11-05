@@ -2,7 +2,6 @@
   display: grid;
   grid-template-rows: minmax(9px, max-content) 1fr;
   background: var(--primary-dark-color);
-  max-height: calc(50vh + 24px);
   will-change: height;
   overflow: hidden;
 

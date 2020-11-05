@@ -36,7 +36,7 @@ export class LayoutService {
   }
 
   get maxHeight() {
-    return Math.floor(window.innerHeight / 2);
+    return 380;
   }
 
   get menuOpen() {
