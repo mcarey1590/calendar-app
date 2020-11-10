@@ -5,3 +5,5 @@ Date selector is a pull down menu at the top so you can tap on a date or swipe l
 
 
 Agendas are just placeholder text and randomly generated
+
+Hosted at https://calendar-app-408c6.web.app/
